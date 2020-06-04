@@ -1,0 +1,55 @@
+{%extends "base.html" %}
+
+{% block title %}Uploaded{% endblock %}
+
+ 
+
+{% block content %}
+<!-- Main Content Is Here -->
+
+<div class="container container-fluid my-container">
+  <div class="container page-wrapper">
+    <h1 class="maintitle2">Here's your image... </h1>
+        <div class="row justify-content-center align-items-center mx-1">
+          <img src="{{url_for('static', filename=image_name)}}" class="img-fluid rounded" style="height: 540px;">  <!-- Display the image -->
+        </div>
+
+        <div class="imgButton">
+          <form method="POST" enctype="multipart/form-data" action="{{ url_for('detect') }}" class="form-group" style="padding-top: 20px;">
+            <button class="btn btn-primary mb-2 ld-ext-right touchme"><span>Predict Occupation</span></button>
+          </form>
+          <p><a href="{{ url_for('home')}}" type="button" class="btn btn-primary" style="margin-bottom: 20px;" > Go Back</a></p>
+        </div>  
+
+     </div> 
+</div>
+
+
+<script>
+  $(document).ready(function() {
+       $(".touchme").click(function() {
+           var spinnr = $('<i class="fa fa-circle-o-notch fa-spin spinner"></i>');
+           $(this).append(spinnr);
+           $('.btn:hover span').css({'padding-right': '25px'}); 
+           $('.btn:hover span:after').css({'opacity':'1','right': '0'}); 
+       });
+       
+   });
+</script>
+
+<!-- <div class="container container-fluid my-container" >
+  <div class="container main_web">
+        <div class="img-container">
+          <img src="{{url_for('static', filename=image_name)}}"   class="rounded picture">  
+        </div>
+        <div class="imgButton">
+          <form method="POST" enctype="multipart/form-data" action="{{ url_for('detect') }}" class="form-group" style="padding-top: 20px;">
+            <button class="btn btn-primary mb-2"><span>Get Results</span></button>
+          </form>
+          <p><a href="{{ url_for('home')}}" type="button" class="btn btn-primary" style="margin-bottom: 20px;" > Go Back</a></p>
+        </div>  
+  </div>
+</div>  -->
+
+
+{% endblock %}

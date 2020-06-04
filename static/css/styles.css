@@ -1,0 +1,196 @@
+/* Index */
+.head{
+    padding-top: 50px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.maintitle{
+  display: inline-block;
+  position: relative;
+  color: white; 
+  font-size:8vw;
+}
+
+.maintitle::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: center center;
+  transition: transform 0.25s ease-out;
+}
+
+.maintitle:hover::before {
+  transform: scaleX(1);
+}
+
+.info{
+    color: white; 
+    padding: 10px; 
+    text-align: center;
+}
+
+.info1{
+    color: white; 
+    text-align: center;
+}
+
+.tip{
+    color: white; 
+    text-align: center;
+    font-size: 0.7vw;
+    margin-top: 12px;
+}
+
+.form-group{
+    padding: 10px;
+    text-align: center;
+}
+
+.how_fn{
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+.how_fn::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: center center;
+    transition: transform 0.25s ease-out;
+}
+  
+.how_fn:hover::before {
+    transform: scaleX(1);
+}
+
+.how_fn_2{
+    width: 98%;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.head_2{
+    width: 98%;
+    margin: 0 auto; 
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+#customFile{
+    cursor: pointer;
+}
+
+/* End of Index */
+
+
+/* Details */
+
+.imgButton{
+    text-align:center;
+}
+.btn{
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.spinner {
+    margin-left: 5px;
+  }
+
+/* End of details */
+
+/* Results */
+.maintitle2{
+    color: white; 
+    padding: 20px; 
+    text-align: center;
+    font-size:4vw;
+}
+
+.job{
+    padding-top: 80px;
+    color: white;
+}
+
+.job_result{
+    text-align: center;
+    font-size:6vw;
+    color: white;
+}
+
+.details{
+    text-align: center;
+    color: white;
+}
+
+#list{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.feedback{
+text-align: center;
+margin-top: 60px;
+}
+
+.question{
+color: azure;
+font-size: 30px;
+padding-bottom: 20px;
+}
+
+.returnbtn{
+padding-top: 40px;
+text-align: center;
+}
+
+/* End of Results */
+
+/* Others */
+.error{
+    text-align: center;
+    padding-top: 200px; 
+    font-size:4vw;
+    color: white;
+}
+
+.trybtn{
+    padding-top: 40px;
+    text-align: center;
+    padding-bottom: 200px;
+    margin-bottom: 20px;
+    }
+
+.enddiv{
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+}
+
+.endquote{
+    font-size:2vw;
+}
+
+#nme{
+    font-size:1vw;
+}

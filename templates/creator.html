@@ -1,0 +1,29 @@
+{%extends "base.html" %}
+
+{% block title %}Creator{% endblock %}
+
+<!-- Creator Information-->
+
+{% block content %}
+
+<div class="container container-fluid my-container" >
+    <div class="container page-wrapper">
+        <p style="font-size:8vw; text-align: center; text-shadow: 0px 0px 18px rgb(0,0,0);">Creator</p>
+        <div class="row justify-content-center align-items-center">
+            <img src="{{url_for('static', filename='img/profilephoto.jpg')}}" class="img-fluid rounded" style="padding-bottom: 20px; width: 50%;" alt="Creator Photo">
+        </div>
+        <h6 class="info">Kamel Dela Adjei is a Final Year student pursuing a <em>Bsc Digital Media Design</em> degree in the <em>University of Plymouth</em> in the United Kingdom. 
+            A self-proclaimed AI activist who seeks to create more opportunities in AI for marginalized communities and make AI more inclusive and widespread especially for individuals 
+            in his home country, Ghana, West Africa. He is also an avid critic of the use of flawed predictive algorithms and supports the need for proper examinations conducted for these 
+            systems, as well as, analysing the algorithm's intepretation of training data .As a Black man, he finds it important to speak about these issues as technology continues to display 
+            similar biases that negative impact individuals from the same community as him.
+        </h6>
+
+        <div class="enddiv">
+            <h3 class="endquote"> "AI Available and Accessible for Everyone"</h3>
+            <p id="nme">- Kamel </p>
+        </div>
+    </div>
+</div> 
+
+{% endblock %}

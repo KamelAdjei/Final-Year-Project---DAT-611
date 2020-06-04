@@ -1,0 +1,21 @@
+{%extends "base.html" %}
+
+{% block title %}Error{% endblock %}
+
+{% block content %}
+<!-- Main Content Is Here -->
+
+<div class="container container-fluid my-container" >
+  <div class="container page-wrapper">
+    <div class="error">
+      <p>Face could not be detected. </p>
+      <h6>Please confirm that the image contains a clear face and try again</h6>
+    </div>
+
+    <div class="trybtn">
+      <p><a href="{{ url_for('home')}}" type="button" class="btn btn-primary" > Try Again</a></p>   
+    </div>         
+ </div> 
+</div> 
+{% endblock %}
+

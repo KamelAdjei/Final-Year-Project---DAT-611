@@ -1,0 +1,56 @@
+{%extends "base.html" %} <!-- Extending base template-->
+
+{% block title %}Home{% endblock %} <!-- Template Title -->
+
+{% block content %}
+
+  <div class="container container-fluid my-container" >
+      <div class="container page-wrapper">
+        <div class="head"><h1 class="maintitle">Label.me</h1></div>
+        <h4 class="info1">
+          Have you ever wanted to find out which job would be perfect for you based on your race, gender or ethnicity?
+        </h4>
+        <h6 class="info">
+          Label.me is a simple web application powered by state-of-the-art facial analysis framework, Deepface,
+          which allows you to upload a photo and through complex methods and analysis, will predict a potential career or occupation. 
+        </h6>
+        <div class="tip"><p>With more than a 1000 jobs and occupations in our database, simply follow the instructions below and find your path!</p></div>
+
+
+        <form method="POST" enctype="multipart/form-data" action="{{ url_for('upload') }}" class="form-group"> <!-- Upload an Image -->
+          <div class="custom-file mb-3">
+            <input type="file" name="photo" class="custom-file-input" id="customFile" name="filename" accept="image/*" required>
+            <label class="custom-file-label" for="customFile">Upload Photo</label>
+          </div>
+            <input type="submit" class="btn btn-primary mb-2" onclick="myFunction()"> 
+            <input type="reset" value="Reset" class="btn btn-danger mb-2">
+        </form>
+    
+
+          <section>
+
+            <div class="head">
+              <h2 class="how_fn">How it all Works.</h2>
+            </div>
+              <img src="{{url_for('static', filename='img/steps.png')}}" class="img-fluid " style="padding: 15px;" alt="Information Upload">
+            <div class="head_2">
+              <h2 class="how_fn">Image Recommendation for Optimum Results.</h2>
+            </div>
+            <div class="row justify-content-center align-items-center">
+              <img src="{{url_for('static', filename='img/labelattn.png')}}" class="img-fluid " style="padding: 15px;" alt="Information Upload">
+            </div>
+
+        </section>
+      </div>
+  </div> 
+
+  <script>
+  $(".custom-file-input").on("change", function() {
+      var fileName = $(this).val().split("\\").pop();
+      $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+    });
+  </script>
+
+{% endblock %} 
+
+
