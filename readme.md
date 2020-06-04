@@ -21,13 +21,12 @@ Type in cmd : pip install -r requirements.txt
  2. Run *app.py* with `python app.py`.
  3. The demo will be live at [http://localhost:5000/](http://localhost:5000/)
 
-## How to Deploy
+## How to Deploy:
 
 - It will be deployed using Flask which is a framework written in Python used to build web applications.
 - Simply type in cmd in folder "python app.py" and a development server will be live.
 
-## How to use:
-- Once the flask server is running
+## Once the flask server is running:
 - You will be able to upload an image.
 - You will be able to analyze the image.
 - Based on the results from the analysis, a random job title will be generated from the specified group.
