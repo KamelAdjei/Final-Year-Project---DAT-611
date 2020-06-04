@@ -1,17 +1,17 @@
-Links:
+## Links
 OneDrive: https://liveplymouthac-my.sharepoint.com/:f:/r/personal/kamel_adjei_students_plymouth_ac_uk/Documents/PROJECT?csf=1&web=1&e=UdppDc
 Github: https://github.com/KamelAdjei
 Youtube: https://www.youtube.com/channel/UCOUrASPLv0as6m6N5cgQQcA
 
 Folder:
-FYP DAT 611 – project folder
+FYP DAT 611 â€“ project folder
 - Samplephotos ( photo examples for testing)
 - Static ( contains css,javascript and img file)
 - Templates (contains all the pages for the web application)
 - Job_list.py ( extensive occupation list for python)
 - App.py ( main python file)
 
-Idea development – sketch file
+Idea development â€“ sketch file
 
 
 How to run project 
