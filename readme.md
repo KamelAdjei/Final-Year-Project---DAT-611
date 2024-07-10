@@ -1,6 +1,4 @@
 ## Links
-- OneDrive: https://liveplymouthac-my.sharepoint.com/:f:/r/personal/kamel_adjei_students_plymouth_ac_uk/Documents/PROJECT?csf=1&web=1&e=UdppDc
-- Github: https://github.com/KamelAdjei
 - Youtube: https://www.youtube.com/channel/UCOUrASPLv0as6m6N5cgQQcA
 
 ## Folder Structure:
